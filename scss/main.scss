@@ -1,0 +1,62 @@
+//css Variable
+// :root{
+//     --primary-color: rgb(255, 0, 170);
+//     --secondary-color:black;
+//     --one-color:white;
+// }
+
+// body{
+//     background-color: var(--primary-color);
+//     .main{
+//         background-color: var(--one-color);
+//         text-align: center;
+//     }
+    
+// }
+
+
+//SASS Varible
+//Variable Global
+
+// $secondary-color : black;
+// $one-color : rgb(255, 255, 255);
+
+
+// body{
+//     //Sas Varriable Local
+//     $primary-color : rgb(255, 0, 170);
+//     // $primary-color : rgb(255, 0, 170) !global; //Akses Untuk Dipaksa Menjadi Global
+//     background-color: $primary-color ;
+
+// }
+
+// .main{
+//     // background-color:$primary-color;
+
+//     background-color:$secondary-color;
+//     text-align: center;
+// }
+// h1{
+//     color: $one-color ; 
+// }
+// .paragraf{
+//     color: $one-color ;
+// }
+
+//Maping (Key,Value) == Array (JS)
+
+// $alret-danger:blue;
+// $alret-succes:rgb(128, 255, 0);
+// $alret-warning:rgb(0, 145, 255);
+
+$alret:(
+    'danger' : blue,
+    'succes' : rgb(128, 255, 0),
+    'warning' : rgb(0, 145, 255),
+
+);
+
+h1{
+    color:map-get($alret,warning);
+
+}
